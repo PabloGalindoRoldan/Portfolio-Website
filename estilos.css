@@ -1,0 +1,163 @@
+body {
+    font-family: "Roboto";
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.navbar {
+    background-color: #850040;
+    background-image: linear-gradient(0deg, #850040 0%, #660336 100%);
+    padding: 0;
+}
+
+.navbar-nav a {
+    padding: 20px 40px;
+    height: 100%;
+    margin: 0;
+}
+
+.navbar-nav a:hover {
+    background-color: #38021e;
+}
+
+.welcome {
+    height: calc(100vh - 20px);
+    background-color: #313131;
+    background-image: linear-gradient(43deg, #313131 0%, #141414 46%, #000000 100%);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.welcome h2 {
+    color: #850040;
+}
+
+.welcome h1{
+    font-size: 3em;
+    text-align: center;
+}
+
+.welcome h2::before {
+    content: "<  ";
+    opacity: 0;
+    transition: opacity 0.2s;
+    color: rgb(196, 130, 7);
+}
+
+.welcome h2::after {
+    content: "  />";
+    opacity: 0;
+    transition: opacity 0.2s;
+    color: rgb(196, 130, 7);
+}
+
+.welcome h2:hover::before {
+    opacity: 1;
+}
+
+.welcome h2:hover::after {
+    opacity: 1;
+}
+
+.projects {
+    background-color: #065662;
+    min-height: 100vh;
+    color: #fff;
+    padding: 0 20%;
+}
+
+.projects h2 {
+    text-align: center;
+    padding: 8% 0;
+    font-size: 2.8em;
+}
+
+.effects:hover .card-img-top{
+    filter: none;
+    opacity: 1;
+}
+
+.card {
+    margin-bottom: 30px;
+    background-color: #19DAF7;
+    text-align: center;
+    border: 0;
+    color: #313131;
+}
+
+.card-img-top {
+    height: 300px;
+    width: auto;
+    object-fit: cover;
+    object-position: top;
+    filter: grayscale(1);
+    opacity: 0.7;
+    transition: all 0.3s;
+}
+
+.card a {
+    width: 100%;
+    border-radius: 0;
+    border: 0;
+    padding: 20px;
+    background-color: #850040;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.card a:hover{
+    background-color: #850040;
+}
+
+.card a::before {
+    content: "<   ";
+    opacity: 0;
+    transition: opacity 0.2s;
+    color: rgb(196, 130, 7);
+}
+
+.card a::after {
+    content: "  />";
+    opacity: 0;
+    transition: opacity 0.2s;
+    color: rgb(196, 130, 7);
+}
+
+.effects:hover .card a::before {
+    opacity: 1;
+}
+
+.effects:hover .card a::after {
+    opacity: 1;
+}
+
+.contact{
+    height: 100vh;
+    background-color: #313131;
+    background-image: linear-gradient(43deg, #313131 0%, #141414 46%, #000000 100%);
+    color: #fff;
+    text-align: center;
+}
+
+.contact h2{
+    text-align: center;
+    padding-top: 20%;
+    font-size: 3em;
+}
+
+.contact h3{
+    font-size: large;
+    font-style: italic;
+    color: #850040;
+}
+
+.contact_icons{
+    margin: 10% 15%;
+}
