@@ -94,7 +94,7 @@ h2{
     font-size: 2.8em;
 }
 
-.effects:hover .card-img-top{
+.effects:hover .imglp, .effects:hover .imgsf, .effects:hover .imgtdp, .effects:hover .imgtp,  .effects:hover .imglw, .effects:hover .imgmw{
     filter: none;
     opacity: 1;
 }
@@ -107,49 +107,74 @@ h2{
     color: #313131;
 }
 
-.card-img-top {
+.imggeneral{
+    display: block;
     height: 300px;
-    width: auto;
-    object-fit: cover;
-    object-position: top;
+    width: 100p;
+    background-position: center;
+    background-size: cover;
     filter: grayscale(1);
     opacity: 0.5;
     transition: all 0.3s;
 }
 
-.card a {
+.imglp{
+    background-image: url(./multimedia/productLandingPage.png);
+}
+
+.imgsf{
+    background-image: url(./multimedia/biuldASurveyForm.png);
+}
+
+.imgtdp{
+    background-image: url(./multimedia/technicalDocumentationPage.png);
+}
+
+.imgtp{
+    background-image: url(./multimedia/tributePage.png);
+}
+
+.imglw{
+    background-image: url(./multimedia/websiteProject.png);
+}
+
+.imgmw{
+    background-image: url(./multimedia/websiteProject2.png);
+}
+
+.card .hyperlink {
     width: 100%;
     border-radius: 0;
     border: 0;
     padding: 20px;
-    background-color: #850040;
+    background-color: #313131;
     font-weight: 600;
     letter-spacing: 2px;
 }
 
-.card a:hover{
-    background-color: #850040;
+.card .hyperlink:hover{
+    background-color: #313131;
 }
 
-.card a::before {
+.card .hyperlink::before {
     content: "<   ";
     opacity: 0;
     transition: opacity 0.2s;
     color: rgb(196, 130, 7);
 }
 
-.card a::after {
+.card .hyperlink::after {
     content: "  />";
     opacity: 0;
     transition: opacity 0.2s;
     color: rgb(196, 130, 7);
 }
 
-.effects:hover .card a::before {
+.effects:hover .card .hyperlink::before {
     opacity: 1;
 }
 
-.effects:hover .card a::after {
+.effects:hover .card .hyperlink::after {
     opacity: 1;
 }
 
