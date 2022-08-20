@@ -2,6 +2,11 @@ body {
     font-family: "Roboto";
 }
 
+::selection{
+    background-color: #053941;
+    color: #fff;
+}
+
 .container-fluid {
     padding: 0;
 }
@@ -33,6 +38,16 @@ body {
     justify-items: center;
     justify-content: center;
     align-content: center;
+}
+
+.welcome h1{
+    letter-spacing: 2px;
+    font-weight: 900;
+}
+
+h2{
+    font-weight: 900;
+    letter-spacing: 2px;
 }
 
 .welcome h2 {
@@ -98,7 +113,7 @@ body {
     object-fit: cover;
     object-position: top;
     filter: grayscale(1);
-    opacity: 0.7;
+    opacity: 0.5;
     transition: all 0.3s;
 }
 
@@ -153,11 +168,40 @@ body {
 }
 
 .contact h3{
-    font-size: large;
+    font-size: 2rem;
     font-style: italic;
     color: #850040;
+    font-weight: 900;
+    letter-spacing: 2px;
 }
 
 .contact_icons{
     margin: 10% 15%;
 }
+
+.contacticon img{
+    transition: all 0.3s;
+}
+
+.contacticon img:hover{
+    scale: 1.1;
+}
+
+.footer{
+    display: flex;
+    min-height: 20vh;
+    color: white;
+    border-top: 5px solid #065662;
+    background-color: #313131;
+    background-image: linear-gradient(43deg, #313131 0%, #141414 80%, #000000 100%);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer h3{
+    font-size: medium;
+    font-style: italic;
+}
+
+
