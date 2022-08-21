@@ -292,8 +292,6 @@ h2{
     opacity: 1;
 }
 
-
-
 .aboutWelcomeRight{
     width: 75%;
     border-left: solid 5px #065662;
@@ -338,6 +336,9 @@ h2{
     color: #fff;
 }
 
+/* termina el about */
+
+/* empiezan los media querys */
 
 @media only screen and (max-width: 767px){
     
