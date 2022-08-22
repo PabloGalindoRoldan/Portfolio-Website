@@ -232,6 +232,25 @@ h2{
     font-style: italic;
 }
 
+.up{
+    height: 60px;
+    width: 60px;
+    background-color: #660336;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    text-align: center;
+    line-height: 60px;
+    color: white;
+    border-radius: 50%;
+    border: 2px solid white;
+    font-size: 30px;
+}
+
+.up:hover{
+    color: #fff;
+}
+
 /* finaliza el index */
 
 /* arranca el about */
@@ -337,6 +356,43 @@ h2{
 }
 
 /* termina el about */
+
+/* arranca el articles*/
+
+.welcomeArticles{
+    min-height: 100vh;
+    background-color: #313131;
+    background-image: linear-gradient(43deg, #313131 0%, #141414 46%, #000000 100%);
+    padding: 10%;
+}
+
+.article{
+    color: #fff;
+}
+
+.carousel{
+    height: 80%;
+}
+
+.carousel-item{
+    padding: 10%;
+}
+
+
+.carousel-item h2{
+    text-align: center;
+    padding: 25% 25%;
+}
+
+.carousel-item h3{
+    text-align: center;
+    padding: 20% 20%;
+}
+
+.carousel-item p{
+    text-align: center;
+    padding: 10% 10%;
+}
 
 /* empiezan los media querys */
 
